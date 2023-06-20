@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/*header inicio*/
+
+header{
+    background-image: url("../media/bg_principal.jpg");
+    box-sizing: cover;
+    height: 100vh;
+}
+
+.content{
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.logo{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 1.7rem;
+    color: #fff;
+    margin-left: 4rem;
+}
+
+.navbar a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scale(0);
+    transition: transform .3s;
+    transform-origin: right;
+
+}
+
+.navbar a:hover::after{
+    transform: scale(1);
+}
+
+
+.content-2{
+    box-sizing: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    max-width: 400px;
+    padding: 30px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.text span{
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+/*header fim*/
+
+/*section inicio*/
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.vd{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.content-sec{
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.txt{
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.txt h1{
+    font-size: 2rem;
+}
+
+.txt p{
+    padding-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.btn{
+    margin-top: 1.5rem;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+/*section fim*/
+
+/*section segunda inicio*/
+
+.imgs{
+    background-color: black;
+    color: #fff;
+    padding: 50px;
+}
+
+.imgs h2{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    cursor: default;
+}
+
+.btn-imgs{
+    margin-top: 1.5rem;
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn-imgs:hover{
+    transform: scale(1.1);
+}
+
+.imgs-container{
+   display: flex;
+   justify-content: space-between;
+   background-color: #fff;
+   color: black;
+   padding: 30px;
+   border-radius: 10px;
+   
+}
+
+.caixa-txt{
+    font-size: 1.5rem;
+}
+
+/*section segunda fim*/
+
+/*Footer*/
+
+
+.icons ul{
+    padding: 10px;
+}
+
+.icons ul div{
+    margin-bottom: 1rem;
+}
+
+.icons ul h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    cursor: default;
+}
+
+.icons ul li{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.icons ul span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 10px;
+    cursor: default;
+}
+
+.df{
+    display: flex;
+    align-items: center;
+}
+
+.df li{
+    transition: .3s ease;
+}
+
+.df li:hover{
+    transform: scale(1.3);
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3%;
+
+}
+
+.links{
+    margin-top: 1rem;
+}
+
+.links ul h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    cursor: default;
+}
+
+.links ul li{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    cursor: default;
+}
+
+.footer-text{
+    padding: 1rem 3%;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+/*Footer*/
+
+
+/*BreakPoints*/
+
+@media (max-width:1120px){
+    
+    .imgs-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .btn-imgs{
+        height: 5rem;
+        margin-left: 20px;
+    }
+
+    .caixa{
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .caixa-txt{
+        margin-left: 20px;
+    }
+}
